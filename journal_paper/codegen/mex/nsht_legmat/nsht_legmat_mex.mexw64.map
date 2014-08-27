@@ -1,0 +1,365 @@
+ nsht_legmat_mex
+
+ Timestamp is 53e8582e (Mon Aug 11 15:44:14 2014)
+
+ Preferred load address is 0000000180000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00003452H .text                   CODE
+ 0001:00003460 00000092H .text$x                 CODE
+ 0002:00000000 000002e8H .idata$5                DATA
+ 0002:000002e8 00000008H .CRT$XCA                DATA
+ 0002:000002f0 00000008H .CRT$XCZ                DATA
+ 0002:000002f8 00000008H .CRT$XIA                DATA
+ 0002:00000300 00000008H .CRT$XIAA               DATA
+ 0002:00000308 00000008H .CRT$XIZ                DATA
+ 0002:00000310 00000cb0H .rdata                  DATA
+ 0002:00000fc0 00000008H .rtc$IAA                DATA
+ 0002:00000fc8 00000008H .rtc$IZZ                DATA
+ 0002:00000fd0 00000008H .rtc$TAA                DATA
+ 0002:00000fd8 00000008H .rtc$TZZ                DATA
+ 0002:00000fe0 00000224H .xdata                  DATA
+ 0002:00001204 00000078H .idata$2                DATA
+ 0002:0000127c 00000014H .idata$3                DATA
+ 0002:00001290 000002e8H .idata$4                DATA
+ 0002:00001578 000007d6H .idata$6                DATA
+ 0002:00001d50 000000ccH .edata                  DATA
+ 0003:00000000 000003d8H .data                   DATA
+ 0003:000003e0 000005c0H .bss                    DATA
+ 0004:00000000 000001c8H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       ___safe_se_handler_table   0000000000000000     <absolute>
+ 0000:00000000       ___safe_se_handler_count   0000000000000000     <absolute>
+ 0000:00000000       __ImageBase                0000000180000000     <linker-defined>
+ 0001:00000000       nsht_legmat_initialize     0000000180001000 f   nsht_legmat_initialize.obj
+ 0001:00000060       nsht_legmat_atexit         0000000180001060 f   nsht_legmat_terminate.obj
+ 0001:000000b0       nsht_legmat_terminate      00000001800010b0 f   nsht_legmat_terminate.obj
+ 0001:000000d0       nsht_legmat                00000001800010d0 f   nsht_legmat.obj
+ 0001:00001ec0       emlrtMexFcnResolvedFunctionsInfo 0000000180002ec0 f   nsht_legmat_api.obj
+ 0001:000022b0       nsht_legmat_api            00000001800032b0 f   nsht_legmat_api.obj
+ 0001:00002480       emxEnsureCapacity          0000000180003480 f   nsht_legmat_emxutil.obj
+ 0001:00002590       emxFree_real_T             0000000180003590 f   nsht_legmat_emxutil.obj
+ 0001:000025d0       emxInit_real_T             00000001800035d0 f   nsht_legmat_emxutil.obj
+ 0001:000027d0       nsht_legmat_atexit_wrapper 00000001800037d0 f   nsht_legmat_mex.obj
+ 0001:000027e0       mexFunction                00000001800037e0 f   nsht_legmat_mex.obj
+ 0001:00002830       emlrtMexFcnProperties      0000000180003830 f   nsht_legmat_mex.obj
+ 0001:0000298c       mxCreateCharArray_700      000000018000398c f   libmx:libmx.dll
+ 0001:00002992       mxGetData                  0000000180003992 f   libmx:libmx.dll
+ 0001:00002998       mxSetDimensions_700        0000000180003998 f   libmx:libmx.dll
+ 0001:0000299e       mxSetData                  000000018000399e f   libmx:libmx.dll
+ 0001:000029a4       mxCreateNumericArray_700   00000001800039a4 f   libmx:libmx.dll
+ 0001:000029aa       mxCreateNumericMatrix_700  00000001800039aa f   libmx:libmx.dll
+ 0001:000029b0       mxCreateString             00000001800039b0 f   libmx:libmx.dll
+ 0001:000029b6       mxCreateStructArray_700    00000001800039b6 f   libmx:libmx.dll
+ 0001:000029bc       mxCreateDoubleScalar       00000001800039bc f   libmx:libmx.dll
+ 0001:000029c2       mxSetFieldByNumber_700     00000001800039c2 f   libmx:libmx.dll
+ 0001:000029c8       mxCreateLogicalMatrix_700  00000001800039c8 f   libmx:libmx.dll
+ 0001:000029ce       mxCreateStructMatrix_700   00000001800039ce f   libmx:libmx.dll
+ 0001:000029d4       mexAtExit                  00000001800039d4 f   libmex:libmex.dll
+ 0001:000029da       emlrtFirstTimeR2012b       00000001800039da f   libemlrt:libemlrt.dll
+ 0001:000029e0       emlrtEnterRtStackR2012b    00000001800039e0 f   libemlrt:libemlrt.dll
+ 0001:000029e6       emlrtClearAllocCountR2012b 00000001800039e6 f   libemlrt:libemlrt.dll
+ 0001:000029ec       emlrtCreateRootTLS         00000001800039ec f   libemlrt:libemlrt.dll
+ 0001:000029f2       emlrtGetBreakCheckFlagAddressR2012b 00000001800039f2 f   libemlrt:libemlrt.dll
+ 0001:000029f8       emlrtDestroyRootTLS        00000001800039f8 f   libemlrt:libemlrt.dll
+ 0001:000029fe       emlrtLeaveRtStackR2012b    00000001800039fe f   libemlrt:libemlrt.dll
+ 0001:00002a04       emlrtPopRtStackR2012b      0000000180003a04 f   libemlrt:libemlrt.dll
+ 0001:00002a0a       emlrtErrorWithMessageIdR2012b 0000000180003a0a f   libemlrt:libemlrt.dll
+ 0001:00002a10       emlrtPushRtStackR2012b     0000000180003a10 f   libemlrt:libemlrt.dll
+ 0001:00002a16       emlrtCallMATLABR2012b      0000000180003a16 f   libemlrt:libemlrt.dll
+ 0001:00002a1c       emlrtDynamicBoundsCheckR2012b 0000000180003a1c f   libemlrt:libemlrt.dll
+ 0001:00002a22       emlrtBreakCheckR2012b      0000000180003a22 f   libemlrt:libemlrt.dll
+ 0001:00002a28       emlrtForLoopVectorCheckR2012b 0000000180003a28 f   libemlrt:libemlrt.dll
+ 0001:00002a2e       emlrtIntegerCheckR2012b    0000000180003a2e f   libemlrt:libemlrt.dll
+ 0001:00002a34       emlrtNonNegativeCheckR2012b 0000000180003a34 f   libemlrt:libemlrt.dll
+ 0001:00002a3a       emlrtAssign                0000000180003a3a f   libemlrt:libemlrt.dll
+ 0001:00002a40       emlrtInitCharArrayR2013a   0000000180003a40 f   libemlrt:libemlrt.dll
+ 0001:00002a46       emlrtDestroyArray          0000000180003a46 f   libemlrt:libemlrt.dll
+ 0001:00002a4c       emlrtCheckVsBuiltInR2012b  0000000180003a4c f   libemlrt:libemlrt.dll
+ 0001:00002a52       emlrtCheckBuiltInR2012b    0000000180003a52 f   libemlrt:libemlrt.dll
+ 0001:00002a58       emlrtNameCapturePostProcessR2012a 0000000180003a58 f   libemlrt:libemlrt.dll
+ 0001:00002a5e       emlrtAlias                 0000000180003a5e f   libemlrt:libemlrt.dll
+ 0001:00002a64       emlrtAddField              0000000180003a64 f   libemlrt:libemlrt.dll
+ 0001:00002a6a       emlrtHeapReferenceStackLeaveFcnR2012b 0000000180003a6a f   libemlrt:libemlrt.dll
+ 0001:00002a70       emlrtAliasP                0000000180003a70 f   libemlrt:libemlrt.dll
+ 0001:00002a76       emlrtHeapReferenceStackEnterFcnR2012b 0000000180003a76 f   libemlrt:libemlrt.dll
+ 0001:00002a7c       emlrtFreeMex               0000000180003a7c f   libemlrt:libemlrt.dll
+ 0001:00002a82       emlrtHeapAllocationErrorR2012b 0000000180003a82 f   libemlrt:libemlrt.dll
+ 0001:00002a88       emlrtCallocMex             0000000180003a88 f   libemlrt:libemlrt.dll
+ 0001:00002a8e       emlrtSizeMulR2012b         0000000180003a8e f   libemlrt:libemlrt.dll
+ 0001:00002a94       emlrtPushHeapReferenceStackR2012b 0000000180003a94 f   libemlrt:libemlrt.dll
+ 0001:00002a9a       emlrtMallocMex             0000000180003a9a f   libemlrt:libemlrt.dll
+ 0001:00002aa0       emlrtReturnArrayR2009a     0000000180003aa0 f   libemlrt:libemlrt.dll
+ 0001:00002aa6       emlrtErrMsgIdAndTxt        0000000180003aa6 f   libemlrt:libemlrt.dll
+ 0001:00002aac       muDoubleScalarCos          0000000180003aac f   libmwmathutil:libmwmathutil.dll
+ 0001:00002ab2       muDoubleScalarPower        0000000180003ab2 f   libmwmathutil:libmwmathutil.dll
+ 0001:00002ab8       muDoubleScalarFloor        0000000180003ab8 f   libmwmathutil:libmwmathutil.dll
+ 0001:00002abe       muDoubleScalarAbs          0000000180003abe f   libmwmathutil:libmwmathutil.dll
+ 0001:00002ac4       muDoubleScalarSin          0000000180003ac4 f   libmwmathutil:libmwmathutil.dll
+ 0001:00002aca       muDoubleScalarSqrt         0000000180003aca f   libmwmathutil:libmwmathutil.dll
+ 0001:00002ad0       __GSHandlerCheckCommon     0000000180003ad0 f   MSVCRT:gshandler.obj
+ 0001:00002b34       __GSHandlerCheck           0000000180003b34 f   MSVCRT:gshandler.obj
+ 0001:00002b70       __security_check_cookie    0000000180003b70 f   MSVCRT:amdsecgs.obj
+ 0001:00002b90       memset                     0000000180003b90 f   MSVCRT:MSVCR100.dll
+ 0001:00002b96       memcpy                     0000000180003b96 f   MSVCRT:MSVCR100.dll
+ 0001:00002bfc       _CRT_INIT                  0000000180003bfc f   MSVCRT:crtdll.obj
+ 0001:00002f94       _DllMainCRTStartup         0000000180003f94 f   MSVCRT:crtdll.obj
+ 0001:00002fd4       __report_gsfailure         0000000180003fd4 f   MSVCRT:gs_report.obj
+ 0001:00003120       __clean_type_info_names    0000000180004120 f   MSVCRT:tncleanup.obj
+ 0001:0000312c       _onexit                    000000018000412c f   MSVCRT:atonexit.obj
+ 0001:000031dc       atexit                     00000001800041dc f   MSVCRT:atonexit.obj
+ 0001:000031f4       _RTC_Initialize            00000001800041f4 f   MSVCRT:_initsect_.obj
+ 0001:0000322c       _RTC_Terminate             000000018000422c f   MSVCRT:_initsect_.obj
+ 0001:00003270       _ValidateImageBase         0000000180004270 f   MSVCRT:pesect.obj
+ 0001:000032a0       _FindPESection             00000001800042a0 f   MSVCRT:pesect.obj
+ 0001:000032f0       _IsNonwritableInCurrentImage 00000001800042f0 f   MSVCRT:pesect.obj
+ 0001:00003332       _initterm                  0000000180004332 f   MSVCRT:MSVCR100.dll
+ 0001:00003338       _initterm_e                0000000180004338 f   MSVCRT:MSVCR100.dll
+ 0001:0000333e       _amsg_exit                 000000018000433e f   MSVCRT:MSVCR100.dll
+ 0001:00003344       __C_specific_handler       0000000180004344 f   MSVCRT:MSVCR100.dll
+ 0001:0000334a       __CppXcptFilter            000000018000434a f   MSVCRT:MSVCR100.dll
+ 0001:00003350       DllMain                    0000000180004350 f   MSVCRT:dllmain.obj
+ 0001:00003374       __security_init_cookie     0000000180004374 f   MSVCRT:gs_support.obj
+ 0001:00003428       __crt_debugger_hook        0000000180004428 f   MSVCRT:MSVCR100.dll
+ 0001:0000342e       __clean_type_info_names_internal 000000018000442e f   MSVCRT:MSVCR100.dll
+ 0001:00003434       _unlock                    0000000180004434 f   MSVCRT:MSVCR100.dll
+ 0001:0000343a       __dllonexit                000000018000443a f   MSVCRT:MSVCR100.dll
+ 0001:00003440       _lock                      0000000180004440 f   MSVCRT:MSVCR100.dll
+ 0001:00003446       RtlVirtualUnwind           0000000180004446 f   kernel32:KERNEL32.dll
+ 0001:0000344c       RtlLookupFunctionEntry     000000018000444c f   kernel32:KERNEL32.dll
+ 0002:00000000       __imp_GetSystemTimeAsFileTime 0000000180005000     kernel32:KERNEL32.dll
+ 0002:00000008       __imp_GetCurrentProcessId  0000000180005008     kernel32:KERNEL32.dll
+ 0002:00000010       __imp_GetCurrentThreadId   0000000180005010     kernel32:KERNEL32.dll
+ 0002:00000018       __imp_GetTickCount         0000000180005018     kernel32:KERNEL32.dll
+ 0002:00000020       __imp_QueryPerformanceCounter 0000000180005020     kernel32:KERNEL32.dll
+ 0002:00000028       __imp_DisableThreadLibraryCalls 0000000180005028     kernel32:KERNEL32.dll
+ 0002:00000030       __imp_RtlCaptureContext    0000000180005030     kernel32:KERNEL32.dll
+ 0002:00000038       __imp_RtlLookupFunctionEntry 0000000180005038     kernel32:KERNEL32.dll
+ 0002:00000040       __imp_RtlVirtualUnwind     0000000180005040     kernel32:KERNEL32.dll
+ 0002:00000048       __imp_IsDebuggerPresent    0000000180005048     kernel32:KERNEL32.dll
+ 0002:00000050       __imp_SetUnhandledExceptionFilter 0000000180005050     kernel32:KERNEL32.dll
+ 0002:00000058       __imp_UnhandledExceptionFilter 0000000180005058     kernel32:KERNEL32.dll
+ 0002:00000060       __imp_GetCurrentProcess    0000000180005060     kernel32:KERNEL32.dll
+ 0002:00000068       __imp_TerminateProcess     0000000180005068     kernel32:KERNEL32.dll
+ 0002:00000070       __imp_DecodePointer        0000000180005070     kernel32:KERNEL32.dll
+ 0002:00000078       __imp_EncodePointer        0000000180005078     kernel32:KERNEL32.dll
+ 0002:00000080       __imp_Sleep                0000000180005080     kernel32:KERNEL32.dll
+ 0002:00000088       \177KERNEL32_NULL_THUNK_DATA 0000000180005088     kernel32:KERNEL32.dll
+ 0002:00000090       __imp___C_specific_handler 0000000180005090     MSVCRT:MSVCR100.dll
+ 0002:00000098       __imp__amsg_exit           0000000180005098     MSVCRT:MSVCR100.dll
+ 0002:000000a0       __imp__encoded_null        00000001800050a0     MSVCRT:MSVCR100.dll
+ 0002:000000a8       __imp_free                 00000001800050a8     MSVCRT:MSVCR100.dll
+ 0002:000000b0       __imp__initterm_e          00000001800050b0     MSVCRT:MSVCR100.dll
+ 0002:000000b8       __imp__initterm            00000001800050b8     MSVCRT:MSVCR100.dll
+ 0002:000000c0       __imp__malloc_crt          00000001800050c0     MSVCRT:MSVCR100.dll
+ 0002:000000c8       __imp_memcpy               00000001800050c8     MSVCRT:MSVCR100.dll
+ 0002:000000d0       __imp_memset               00000001800050d0     MSVCRT:MSVCR100.dll
+ 0002:000000d8       __imp__unlock              00000001800050d8     MSVCRT:MSVCR100.dll
+ 0002:000000e0       __imp___dllonexit          00000001800050e0     MSVCRT:MSVCR100.dll
+ 0002:000000e8       __imp__lock                00000001800050e8     MSVCRT:MSVCR100.dll
+ 0002:000000f0       __imp__onexit              00000001800050f0     MSVCRT:MSVCR100.dll
+ 0002:000000f8       __imp___crt_debugger_hook  00000001800050f8     MSVCRT:MSVCR100.dll
+ 0002:00000100       __imp___CppXcptFilter      0000000180005100     MSVCRT:MSVCR100.dll
+ 0002:00000108       __imp___clean_type_info_names_internal 0000000180005108     MSVCRT:MSVCR100.dll
+ 0002:00000110       \177MSVCR100_NULL_THUNK_DATA 0000000180005110     MSVCRT:MSVCR100.dll
+ 0002:00000118       __imp_emlrtCheckVsBuiltInR2012b 0000000180005118     libemlrt:libemlrt.dll
+ 0002:00000120       __imp_emlrtNameCapturePostProcessR2012a 0000000180005120     libemlrt:libemlrt.dll
+ 0002:00000128       __imp_emlrtAlias           0000000180005128     libemlrt:libemlrt.dll
+ 0002:00000130       __imp_emlrtAddField        0000000180005130     libemlrt:libemlrt.dll
+ 0002:00000138       __imp_emlrtHeapReferenceStackLeaveFcnR2012b 0000000180005138     libemlrt:libemlrt.dll
+ 0002:00000140       __imp_emlrtAliasP          0000000180005140     libemlrt:libemlrt.dll
+ 0002:00000148       __imp_emlrtHeapReferenceStackEnterFcnR2012b 0000000180005148     libemlrt:libemlrt.dll
+ 0002:00000150       __imp_emlrtFreeMex         0000000180005150     libemlrt:libemlrt.dll
+ 0002:00000158       __imp_emlrtHeapAllocationErrorR2012b 0000000180005158     libemlrt:libemlrt.dll
+ 0002:00000160       __imp_emlrtCallocMex       0000000180005160     libemlrt:libemlrt.dll
+ 0002:00000168       __imp_emlrtSizeMulR2012b   0000000180005168     libemlrt:libemlrt.dll
+ 0002:00000170       __imp_emlrtPushHeapReferenceStackR2012b 0000000180005170     libemlrt:libemlrt.dll
+ 0002:00000178       __imp_emlrtMallocMex       0000000180005178     libemlrt:libemlrt.dll
+ 0002:00000180       __imp_emlrtReturnArrayR2009a 0000000180005180     libemlrt:libemlrt.dll
+ 0002:00000188       __imp_emlrtErrMsgIdAndTxt  0000000180005188     libemlrt:libemlrt.dll
+ 0002:00000190       __imp_emlrtDestroyArray    0000000180005190     libemlrt:libemlrt.dll
+ 0002:00000198       __imp_emlrtInitCharArrayR2013a 0000000180005198     libemlrt:libemlrt.dll
+ 0002:000001a0       __imp_emlrtAssign          00000001800051a0     libemlrt:libemlrt.dll
+ 0002:000001a8       __imp_emlrtNonNegativeCheckR2012b 00000001800051a8     libemlrt:libemlrt.dll
+ 0002:000001b0       __imp_emlrtIntegerCheckR2012b 00000001800051b0     libemlrt:libemlrt.dll
+ 0002:000001b8       __imp_emlrtForLoopVectorCheckR2012b 00000001800051b8     libemlrt:libemlrt.dll
+ 0002:000001c0       __imp_emlrtBreakCheckR2012b 00000001800051c0     libemlrt:libemlrt.dll
+ 0002:000001c8       __imp_emlrtDynamicBoundsCheckR2012b 00000001800051c8     libemlrt:libemlrt.dll
+ 0002:000001d0       __imp_emlrtCallMATLABR2012b 00000001800051d0     libemlrt:libemlrt.dll
+ 0002:000001d8       __imp_emlrtPushRtStackR2012b 00000001800051d8     libemlrt:libemlrt.dll
+ 0002:000001e0       __imp_emlrtErrorWithMessageIdR2012b 00000001800051e0     libemlrt:libemlrt.dll
+ 0002:000001e8       __imp_emlrtPopRtStackR2012b 00000001800051e8     libemlrt:libemlrt.dll
+ 0002:000001f0       __imp_emlrtLeaveRtStackR2012b 00000001800051f0     libemlrt:libemlrt.dll
+ 0002:000001f8       __imp_emlrtDestroyRootTLS  00000001800051f8     libemlrt:libemlrt.dll
+ 0002:00000200       __imp_emlrtGetBreakCheckFlagAddressR2012b 0000000180005200     libemlrt:libemlrt.dll
+ 0002:00000208       __imp_emlrtCreateRootTLS   0000000180005208     libemlrt:libemlrt.dll
+ 0002:00000210       __imp_emlrtClearAllocCountR2012b 0000000180005210     libemlrt:libemlrt.dll
+ 0002:00000218       __imp_emlrtEnterRtStackR2012b 0000000180005218     libemlrt:libemlrt.dll
+ 0002:00000220       __imp_emlrtFirstTimeR2012b 0000000180005220     libemlrt:libemlrt.dll
+ 0002:00000228       __imp_emlrtCheckBuiltInR2012b 0000000180005228     libemlrt:libemlrt.dll
+ 0002:00000230       \177libemlrt_NULL_THUNK_DATA 0000000180005230     libemlrt:libemlrt.dll
+ 0002:00000238       __imp_mexAtExit            0000000180005238     libmex:libmex.dll
+ 0002:00000240       \177libmex_NULL_THUNK_DATA 0000000180005240     libmex:libmex.dll
+ 0002:00000248       __imp_muDoubleScalarAbs    0000000180005248     libmwmathutil:libmwmathutil.dll
+ 0002:00000250       __imp_muDoubleScalarFloor  0000000180005250     libmwmathutil:libmwmathutil.dll
+ 0002:00000258       __imp_muDoubleScalarPower  0000000180005258     libmwmathutil:libmwmathutil.dll
+ 0002:00000260       __imp_muDoubleScalarCos    0000000180005260     libmwmathutil:libmwmathutil.dll
+ 0002:00000268       __imp_muDoubleScalarSin    0000000180005268     libmwmathutil:libmwmathutil.dll
+ 0002:00000270       __imp_muDoubleScalarSqrt   0000000180005270     libmwmathutil:libmwmathutil.dll
+ 0002:00000278       \177libmwmathutil_NULL_THUNK_DATA 0000000180005278     libmwmathutil:libmwmathutil.dll
+ 0002:00000280       __imp_mxCreateStructMatrix_700 0000000180005280     libmx:libmx.dll
+ 0002:00000288       __imp_mxCreateLogicalMatrix_700 0000000180005288     libmx:libmx.dll
+ 0002:00000290       __imp_mxSetFieldByNumber_700 0000000180005290     libmx:libmx.dll
+ 0002:00000298       __imp_mxCreateDoubleScalar 0000000180005298     libmx:libmx.dll
+ 0002:000002a0       __imp_mxCreateStructArray_700 00000001800052a0     libmx:libmx.dll
+ 0002:000002a8       __imp_mxCreateString       00000001800052a8     libmx:libmx.dll
+ 0002:000002b0       __imp_mxCreateNumericMatrix_700 00000001800052b0     libmx:libmx.dll
+ 0002:000002b8       __imp_mxCreateNumericArray_700 00000001800052b8     libmx:libmx.dll
+ 0002:000002c0       __imp_mxSetData            00000001800052c0     libmx:libmx.dll
+ 0002:000002c8       __imp_mxSetDimensions_700  00000001800052c8     libmx:libmx.dll
+ 0002:000002d0       __imp_mxGetData            00000001800052d0     libmx:libmx.dll
+ 0002:000002d8       __imp_mxCreateCharArray_700 00000001800052d8     libmx:libmx.dll
+ 0002:000002e0       \177libmx_NULL_THUNK_DATA  00000001800052e0     libmx:libmx.dll
+ 0002:000002e8       __xc_a                     00000001800052e8     MSVCRT:cinitexe.obj
+ 0002:000002f0       __xc_z                     00000001800052f0     MSVCRT:cinitexe.obj
+ 0002:000002f8       __xi_a                     00000001800052f8     MSVCRT:cinitexe.obj
+ 0002:00000308       __xi_z                     0000000180005308     MSVCRT:cinitexe.obj
+ 0002:00000310       ??_C@_02CAJEIOGA@Sc?$AA@   0000000180005310     nsht_legmat.obj
+ 0002:00000314       ??_C@_01EJNLAFE@P?$AA@     0000000180005314     nsht_legmat.obj
+ 0002:00000318       ??_C@_06GGJLBNFK@thetas?$AA@ 0000000180005318     nsht_legmat.obj
+ 0002:00000320       ??_C@_0EC@IAPIDNOL@C?3?1Program?5Files?1matlab?1r2013b?1t@ 0000000180005320     nsht_legmat.obj
+ 0002:00000364       ??_C@_05PLIADJJL@power?$AA@ 0000000180005364     nsht_legmat.obj
+ 0002:00000370       ??_C@_0ED@CEPHOJKO@C?3?1Program?5Files?1matlab?1r2013b?1t@ 0000000180005370     nsht_legmat.obj
+ 0002:000003b4       ??_C@_06DNEPGKGD@mpower?$AA@ 00000001800053b4     nsht_legmat.obj
+ 0002:000003c0       ??_C@_0EG@JADAGJNA@C?3?1Program?5Files?1matlab?1r2013b?1t@ 00000001800053c0     nsht_legmat.obj
+ 0002:00000408       ??_C@_09JANBMANM@eml_error?$AA@ 0000000180005408     nsht_legmat.obj
+ 0002:00000420       ??_C@_0ED@FCCKINLL@C?3?1Program?5Files?1matlab?1r2013b?1t@ 0000000180005420     nsht_legmat.obj
+ 0002:00000464       ??_C@_04EIAKFFMI@sqrt?$AA@ 0000000180005464     nsht_legmat.obj
+ 0002:00000470       ??_C@_0ED@DOMEIKLJ@C?3?1Program?5Files?1matlab?1r2013b?1t@ 0000000180005470     nsht_legmat.obj
+ 0002:000004b4       ??_C@_05KKCIMGE@error?$AA@ 00000001800054b4     nsht_legmat.obj
+ 0002:000004c0       ??_C@_0EG@FEPFEDAC@C?3?1Users?1u5472257?1Documents?1GitH@ 00000001800054c0     nsht_legmat.obj
+ 0002:00000508       ??_C@_0M@DFMHKEFN@nsht_legmat?$AA@ 0000000180005508     nsht_legmat.obj
+ 0002:00000530       ??_C@_0CA@LCEEBFGJ@Coder?3toolbox?3power_domainError?$AA@ 0000000180005530     nsht_legmat.obj
+ 0002:00000550       ??_C@_0BP@KBACPONM@Coder?3toolbox?3ElFunDomainError?$AA@ 0000000180005550     nsht_legmat.obj
+ 0002:00000570       __real@4008000000000000    0000000180005570     nsht_legmat.obj
+ 0002:00000578       __real@3ffbb67ae8584caa    0000000180005578     nsht_legmat.obj
+ 0002:00000580       __real@40040d931ff62705    0000000180005580     nsht_legmat.obj
+ 0002:00000588       __real@bff0000000000000    0000000180005588     nsht_legmat.obj
+ 0002:00000590       __real@3f847ae147ae147b    0000000180005590     nsht_legmat.obj
+ 0002:00000598       __real@4059000000000000    0000000180005598     nsht_legmat.obj
+ 0002:000005a0       __real@4000000000000000    00000001800055a0     nsht_legmat.obj
+ 0002:000005a8       __real@3ff0000000000000    00000001800055a8     nsht_legmat.obj
+ 0002:000005b0       ??_C@_00CNPNBAHC@?$AA@     00000001800055b0     nsht_legmat_api.obj
+ 0002:000005b8       ??_C@_0BA@OMAJNHKL@nsht_legmat_api?$AA@ 00000001800055b8     nsht_legmat_api.obj
+ 0002:000005d8       ??_C@_06BNJCAIGJ@double?$AA@ 00000001800055d8     nsht_legmat_api.obj
+ 0002:000005e0       ??_C@_0EB@CJCLPIKP@?$FLILXE?$FN$matlabroot$?1toolbox?1eml?1l@ 00000001800055e0     nsht_legmat_api.obj
+ 0002:00000628       ??_C@_0P@JGDKLIAM@eml_scalar_cos?$AA@ 0000000180005628     nsht_legmat_api.obj
+ 0002:00000638       ??_C@_0DG@NKKCIOHA@?$FLILXE?$FN$matlabroot$?1toolbox?1eml?1l@ 0000000180005638     nsht_legmat_api.obj
+ 0002:00000670       ??_C@_03LALBNOCG@cos?$AA@  0000000180005670     nsht_legmat_api.obj
+ 0002:00000680       ??_C@_0GD@ENJNEKIK@?$FLE?$FNC?3?1Users?1u5472257?1Documents?1G@ 0000000180005680     nsht_legmat_api.obj
+ 0002:000006f0       ??_C@_0EB@HMOIANG@?$FLILXE?$FN$matlabroot$?1toolbox?1eml?1l@ 00000001800056f0     nsht_legmat_api.obj
+ 0002:00000738       ??_C@_0P@DNMCPPDN@eml_scalar_sin?$AA@ 0000000180005738     nsht_legmat_api.obj
+ 0002:00000748       ??_C@_0DG@PEEHPGAJ@?$FLILXE?$FN$matlabroot$?1toolbox?1eml?1l@ 0000000180005748     nsht_legmat_api.obj
+ 0002:00000780       ??_C@_03BLEJJJBH@sin?$AA@  0000000180005780     nsht_legmat_api.obj
+ 0002:00000790       ??_C@_0FF@DIBIAHKO@?$FLE?$FNC?3?1Users?1u5472257?1Documents?1G@ 0000000180005790     nsht_legmat_api.obj
+ 0002:000007f0       ??_C@_0EJ@ICIFOOJM@?$FLILXE?$FN$matlabroot$?1toolbox?1eml?1l@ 00000001800057f0     nsht_legmat_api.obj
+ 0002:00000840       ??_C@_0ED@BIIMGNAK@?$FLILXE?$FN$matlabroot$?1toolbox?1eml?1l@ 0000000180005840     nsht_legmat_api.obj
+ 0002:00000888       ??_C@_0BB@DKCPHGKF@eml_scalar_floor?$AA@ 0000000180005888     nsht_legmat_api.obj
+ 0002:000008a0       ??_C@_0DI@KHEKJDFK@?$FLILXE?$FN$matlabroot$?1toolbox?1eml?1l@ 00000001800058a0     nsht_legmat_api.obj
+ 0002:000008d8       ??_C@_05PBJFFIGL@floor?$AA@ 00000001800058d8     nsht_legmat_api.obj
+ 0002:000008e0       ??_C@_0EC@EDKCHFKG@?$FLILXE?$FN$matlabroot$?1toolbox?1eml?1l@ 00000001800058e0     nsht_legmat_api.obj
+ 0002:00000928       ??_C@_0BC@JEELAMCJ@eml_scalexp_alloc?$AA@ 0000000180005928     nsht_legmat_api.obj
+ 0002:00000940       ??_C@_0DG@PFPDNIHA@?$FLILXE?$FN$matlabroot$?1toolbox?1eml?1l@ 0000000180005940     nsht_legmat_api.obj
+ 0002:00000978       ??_C@_0DP@JAKKLAFJ@?$FLILXE?$FN$matlabroot$?1toolbox?1eml?1l@ 0000000180005978     nsht_legmat_api.obj
+ 0002:000009b8       ??_C@_0O@DGEIFEHG@eml_scalar_eg?$AA@ 00000001800059b8     nsht_legmat_api.obj
+ 0002:000009c8       ??_C@_03BCGAIFPO@abs?$AA@  00000001800059c8     nsht_legmat_api.obj
+ 0002:000009d0       ??_C@_0EB@JMHDJNBF@?$FLILXE?$FN$matlabroot$?1toolbox?1eml?1l@ 00000001800059d0     nsht_legmat_api.obj
+ 0002:00000a18       ??_C@_0DO@FIFFNPJ@?$FLILXE?$FN$matlabroot$?1toolbox?1eml?1l@ 0000000180005a18     nsht_legmat_api.obj
+ 0002:00000a58       ??_C@_0DH@EDFPKIIH@?$FLILXE?$FN$matlabroot$?1toolbox?1eml?1l@ 0000000180005a58     nsht_legmat_api.obj
+ 0002:00000a90       ??_C@_0P@DEOLODNE@eml_scalar_abs?$AA@ 0000000180005a90     nsht_legmat_api.obj
+ 0002:00000aa0       ??_C@_0DG@GPPKOLMK@?$FLILXE?$FN$matlabroot$?1toolbox?1eml?1l@ 0000000180005aa0     nsht_legmat_api.obj
+ 0002:00000ae0       ??_C@_0EC@CDBNIKKB@?$FLILXE?$FN$matlabroot$?1toolbox?1eml?1l@ 0000000180005ae0     nsht_legmat_api.obj
+ 0002:00000b28       ??_C@_0BA@JDJHBHHI@eml_scalar_sqrt?$AA@ 0000000180005b28     nsht_legmat_api.obj
+ 0002:00000b38       ??_C@_0DK@JGMDEBEG@?$FLILXE?$FN$matlabroot$?1toolbox?1eml?1l@ 0000000180005b38     nsht_legmat_api.obj
+ 0002:00000b78       ??_C@_0DI@GANAMGFL@?$FLILXE?$FN$matlabroot$?1toolbox?1eml?1l@ 0000000180005b78     nsht_legmat_api.obj
+ 0002:00000bb0       ??_C@_07KHOFHKNM@eml_div?$AA@ 0000000180005bb0     nsht_legmat_api.obj
+ 0002:00000bc0       ??_C@_0EH@ELBOGDPJ@?$FLILXE?$FN$matlabroot$?1toolbox?1eml?1l@ 0000000180005bc0     nsht_legmat_api.obj
+ 0002:00000c08       ??_C@_0BH@LFDIDDBI@eml_scalexp_compatible?$AA@ 0000000180005c08     nsht_legmat_api.obj
+ 0002:00000c20       ??_C@_07EDECNBOH@rdivide?$AA@ 0000000180005c20     nsht_legmat_api.obj
+ 0002:00000c28       ??_C@_0DI@ECPGNJBG@?$FLILXE?$FN$matlabroot$?1toolbox?1eml?1l@ 0000000180005c28     nsht_legmat_api.obj
+ 0002:00000c60       ??_C@_08GNEFHMND@mrdivide?$AA@ 0000000180005c60     nsht_legmat_api.obj
+ 0002:00000c70       ??_C@_0DH@LODENFNP@?$FLILXE?$FN$matlabroot$?1toolbox?1eml?1l@ 0000000180005c70     nsht_legmat_api.obj
+ 0002:00000ca8       ??_C@_06PCBFLGP@mtimes?$AA@ 0000000180005ca8     nsht_legmat_api.obj
+ 0002:00000cb0       ??_C@_0DJ@HMGCMLEI@?$FLILXE?$FN$matlabroot$?1toolbox?1eml?1l@ 0000000180005cb0     nsht_legmat_api.obj
+ 0002:00000cec       ??_C@_04ENMBGAPA@char?$AA@ 0000000180005cec     nsht_legmat_api.obj
+ 0002:00000cf4       ??_C@_06IJDLPEM@length?$AA@ 0000000180005cf4     nsht_legmat_api.obj
+ 0002:00000d00       ??_C@_0DH@DFICMMJC@?$FLILXE?$FN$matlabroot$?1toolbox?1eml?1l@ 0000000180005d00     nsht_legmat_api.obj
+ 0002:00000d38       ??_C@_0DH@FJGMMLJA@?$FLILXE?$FN$matlabroot$?1toolbox?1eml?1l@ 0000000180005d38     nsht_legmat_api.obj
+ 0002:00000d70       ??_C@_0FL@JJJDAADF@?$FLE?$FNC?3?1Users?1u5472257?1Documents?1G@ 0000000180005d70     nsht_legmat_api.obj
+ 0002:00000dd0       ??_C@_0EJ@NJGMFEIG@?$FLE?$FNC?3?1Users?1u5472257?1Documents?1G@ 0000000180005dd0     nsht_legmat_api.obj
+ 0002:00000e20       ??_C@_0DJ@LGGCAFOA@?$FLILXE?$FN$matlabroot$?1toolbox?1eml?1l@ 0000000180005e20     nsht_legmat_api.obj
+ 0002:00000e60       ??_C@_0M@FMAJFPGC@mFileTimeHi?$AA@ 0000000180005e60     nsht_legmat_api.obj
+ 0002:00000e70       ??_C@_0M@NFKFADI@mFileTimeLo?$AA@ 0000000180005e70     nsht_legmat_api.obj
+ 0002:00000e80       ??_C@_0L@HMDKMKNA@fileTimeHi?$AA@ 0000000180005e80     nsht_legmat_api.obj
+ 0002:00000e90       ??_C@_0L@CNGJMFIK@fileTimeLo?$AA@ 0000000180005e90     nsht_legmat_api.obj
+ 0002:00000ea0       ??_C@_08CGJBBLIA@resolved?$AA@ 0000000180005ea0     nsht_legmat_api.obj
+ 0002:00000eb0       ??_C@_0N@IGLAPNJK@dominantType?$AA@ 0000000180005eb0     nsht_legmat_api.obj
+ 0002:00000ec0       ??_C@_04MEMAJGDJ@name?$AA@ 0000000180005ec0     nsht_legmat_api.obj
+ 0002:00000ec8       ??_C@_07JKKCBBMM@context?$AA@ 0000000180005ec8     nsht_legmat_api.obj
+ 0002:00000ed0       ??_C@_01GOHFPIOK@m?$AA@    0000000180005ed0     nsht_legmat_api.obj
+ 0002:00000ed4       ??_C@_01OCOKONAJ@L?$AA@    0000000180005ed4     nsht_legmat_api.obj
+ 0002:00000ed8       ??_C@_0CF@OIONOIOI@EMLRT?3runTime?3TooManyOutputArgum@ 0000000180005ed8     nsht_legmat_mex.obj
+ 0002:00000f00       ??_C@_0CC@IMHDKEMC@EMLRT?3runTime?3WrongNumberOfInput@ 0000000180005f00     nsht_legmat_mex.obj
+ 0002:00000f28       ??_C@_0BD@BMDBANMC@8?41?40?4604?5?$CIR2013a?$CJ?$AA@ 0000000180005f28     nsht_legmat_mex.obj
+ 0002:00000f40       ??_C@_0P@FDPDNMBC@ConstantInputs?$AA@ 0000000180005f40     nsht_legmat_mex.obj
+ 0002:00000f50       ??_C@_0BA@HBLCOFA@NumberOfOutputs?$AA@ 0000000180005f50     nsht_legmat_mex.obj
+ 0002:00000f60       ??_C@_0P@DJPKAEOC@NumberOfInputs?$AA@ 0000000180005f60     nsht_legmat_mex.obj
+ 0002:00000f70       ??_C@_04FABLJDN@Name?$AA@  0000000180005f70     nsht_legmat_mex.obj
+ 0002:00000f78       ??_C@_0M@HOOGCLMJ@EntryPoints?$AA@ 0000000180005f78     nsht_legmat_mex.obj
+ 0002:00000f88       ??_C@_0BC@PFKIGKIM@ResolvedFunctions?$AA@ 0000000180005f88     nsht_legmat_mex.obj
+ 0002:00000fa0       ??_C@_07NGFJPNPN@Version?$AA@ 0000000180005fa0     nsht_legmat_mex.obj
+ 0002:00000fa8       _pRawDllMain               0000000180005fa8     MSVCRT:crtdll.obj
+ 0002:00000fa8       _pDefaultRawDllMain        0000000180005fa8     MSVCRT:crtdll.obj
+ 0002:00000fc0       __rtc_iaa                  0000000180005fc0     MSVCRT:_initsect_.obj
+ 0002:00000fc8       __rtc_izz                  0000000180005fc8     MSVCRT:_initsect_.obj
+ 0002:00000fd0       __rtc_taa                  0000000180005fd0     MSVCRT:_initsect_.obj
+ 0002:00000fd8       __rtc_tzz                  0000000180005fd8     MSVCRT:_initsect_.obj
+ 0002:00001204       __IMPORT_DESCRIPTOR_libmx  0000000180006204     libmx:libmx.dll
+ 0002:00001218       __IMPORT_DESCRIPTOR_libmex 0000000180006218     libmex:libmex.dll
+ 0002:0000122c       __IMPORT_DESCRIPTOR_libemlrt 000000018000622c     libemlrt:libemlrt.dll
+ 0002:00001240       __IMPORT_DESCRIPTOR_libmwmathutil 0000000180006240     libmwmathutil:libmwmathutil.dll
+ 0002:00001254       __IMPORT_DESCRIPTOR_MSVCR100 0000000180006254     MSVCRT:MSVCR100.dll
+ 0002:00001268       __IMPORT_DESCRIPTOR_KERNEL32 0000000180006268     kernel32:KERNEL32.dll
+ 0002:0000127c       __NULL_IMPORT_DESCRIPTOR   000000018000627c     libmx:libmx.dll
+ 0003:00000370       emlrtContextGlobal         0000000180007370     nsht_legmat_mex.obj
+ 0003:000003b0       __security_cookie          00000001800073b0     MSVCRT:gs_cookie.obj
+ 0003:000003b8       __security_cookie_complement 00000001800073b8     MSVCRT:gs_cookie.obj
+ 0003:000003c0       _fltused                   00000001800073c0     MSVCRT:dllsupp.obj
+ 0003:000003d0       __native_dllmain_reason    00000001800073d0     MSVCRT:natstart.obj
+ 0003:000003d4       __native_vcclrit_reason    00000001800073d4     MSVCRT:natstart.obj
+ 0003:000003e0       emlrtRootTLSGlobal         00000001800073e0     nsht_legmat_mex.obj
+ 0003:00000960       ?__type_info_root_node@@3U__type_info_node@@A 0000000180007960     MSVCRT:tncleanup.obj
+ 0003:00000970       emlrtBreakCheckR2012bFlagVar 0000000180007970     <common>
+ 0003:00000978       __native_startup_state     0000000180007978     <common>
+ 0003:00000980       __native_startup_lock      0000000180007980     <common>
+ 0003:00000988       __onexitend                0000000180007988     <common>
+ 0003:00000990       __onexitbegin              0000000180007990     <common>
+ 0003:00000998       __dyn_tls_init_callback    0000000180007998     <common>
+
+ entry point at        0001:00002f94
+
+ Static symbols
+
+ 0001:000014b0       e_emlrt_marshallIn         00000001800024b0 f   nsht_legmat_api.obj
+ 0001:00001590       emlrt_marshallOut          0000000180002590 f   nsht_legmat_api.obj
+ 0001:00001600       info_helper                0000000180002600 f   nsht_legmat_api.obj
+ 0001:00002200       c_emlrt_marshallIn         0000000180003200 f   nsht_legmat_api.obj
+ 0001:000026a0       nsht_legmat_mexFunction    00000001800036a0 f   nsht_legmat_mex.obj
+ 0001:00002b9c       pre_c_init                 0000000180003b9c f   MSVCRT:crtdll.obj
+ 0001:00002e58       __DllMainCRTStartup        0000000180003e58 f   MSVCRT:crtdll.obj
+ 0001:00003460       __DllMainCRTStartup$filt$0 0000000180004460 f   MSVCRT:crtdll.obj
+ 0001:00003490       __DllMainCRTStartup$fin$1  0000000180004490 f   MSVCRT:crtdll.obj
+ 0001:000034aa       _onexit$fin$0              00000001800044aa f   MSVCRT:atonexit.obj
+ 0001:000034d0       _IsNonwritableInCurrentImage$filt$0 00000001800044d0 f   MSVCRT:pesect.obj

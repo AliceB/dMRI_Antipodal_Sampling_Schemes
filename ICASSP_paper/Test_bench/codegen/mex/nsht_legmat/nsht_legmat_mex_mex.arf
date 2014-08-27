@@ -1,0 +1,9 @@
+libemlrt.lib
+libut.lib
+libmwblas.lib
+libmwmathutil.lib
+/export:mexFunction
+/export:emlrtMexFcnProperties
+/export:nsht_legmat
+/export:nsht_legmat_initialize
+/export:nsht_legmat_terminate
