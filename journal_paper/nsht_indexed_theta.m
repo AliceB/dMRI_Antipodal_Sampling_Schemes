@@ -26,6 +26,7 @@ TT = zeros(size(TT_temp));
 
 index_middle = ceil((L+1)/2);
 
+%first sample closest to pi/2
 TT(1) = TT_temp(index_middle);
 %% L even, number of samples are odd. After first one should go left
 if (mod(L,2)==0)

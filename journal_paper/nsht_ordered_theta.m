@@ -21,7 +21,9 @@ function [TT_updated min_cond_vec] = nsht_ordered_theta(L)
 % Altered by: Alice Bates, July 2014
 % NSHT package to perform spherical harmonic transforms
 %
-
+% for i = 7:4:63
+%     nsht_ordered_theta(i);
+% end
 
 % Check arguments.
 if ~isreal(L)
@@ -31,20 +33,18 @@ end
 
 try
 
-    %load(['theta_locations/both_optim_theta_antipodal_L_',num2str(L),'.mat']);
-    load(['theta_locations/theta_antipodal_L_',num2str(L),'.mat']);
+    %load(['theta_locations/40L_samples_theta_antipodal_L_',num2str(L),'.mat']);
+    load(['theta_locations/V2_just_enough_samples_L_',num2str(L),'.mat']);
     %load('nothing');
-    %load(['theta_locations/min_max_cond_theta_antipodal_L_',num2str(L),'.mat']);
+    %load(['theta_locations/equator_offset_theta_antipodal_L_',num2str(L),'.mat']);
     return
 catch err
     disp('computing optimal ring placement');
 %     %optimally place rings 
-%     TT = nsht_indexed_theta(40*L);
-%     TT_ordered_index = [40*L];
-   load(['theta_locations/P0condmin_theta_dMRI_Journal_',num2str(L),'.mat']); 
-   TT = theta_final;  
-   [~,temp_index ] = min(abs(theta_final - 0.5*pi)); %find location of the largest ring (closest to pi/2)
-   TT_ordered_index = [temp_index];
+    
+    NUM_RINGS = L; %number of rings to take physical samples over
+    TT = nsht_indexed_theta(NUM_RINGS);
+    TT_ordered_index = [NUM_RINGS];
    
     %check that legendre polynomial of degree L-1 and order L-2 not zero
     %for this sample
@@ -55,7 +55,7 @@ catch err
     i=1;
     while (abs(PP) < 1e-14)
         disp('PP SMALL --------------------------------------');
-        TT_ordered_index = [40*L - i];
+        TT_ordered_index = [NUM_RINGS - i];
         [P_mat Sc] = nsht_legmat_mex(TT(TT_ordered_index), L, L-2);
         PP = 10.^Sc.*P_mat;
         PP = PP(2);
@@ -128,7 +128,7 @@ catch err
 
     TT_updated = TT(TT_ordered_index);
     
-    save(['theta_locations\both_optim_theta_antipodal_L_' num2str(L) '.mat'], 'TT_updated', 'min_cond_vec'); 
+    save(['theta_locations\V2_just_enough_samples_L_' num2str(L) '.mat'], 'TT_updated', 'min_cond_vec'); 
    
 end %% end try/catch
 

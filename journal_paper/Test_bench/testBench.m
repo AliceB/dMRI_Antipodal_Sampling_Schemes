@@ -5,8 +5,8 @@
 % Install SHT 
 install_sht
 
-MAX_Errors = zeros(1,15);
-MEAN_Errors = zeros(1,15);
+MAX_Errors = zeros(1,11);
+MEAN_Errors = zeros(1,11);
 
 % 
 % global conditionNum ;
@@ -14,7 +14,7 @@ MEAN_Errors = zeros(1,15);
 
 
 index = 1; 
-for L = 5:4:61
+for L = 5:2:25
     for j =1:10 %repeat experiment 10 times for each L
 
 
@@ -50,14 +50,16 @@ end
 
 
 %% plot max and mean error
-x = 5:4:61;
+x = 5:2:25;
 figure();
 semilogy(MAX_Errors,'.-','MarkerSize',14,'Color','k','linewidth',2);
 hold on;
+grid on;
+box on; 
 semilogy(MEAN_Errors,'-x','MarkerSize',10,'Color','k','linewidth',2);
 
 set(gca,'FontSize',12) 
-set(gca,'Xtick',1:15,'XTickLabel',{'5','','13','','21','','29','','37','','45','','53','','61'});
+set(gca,'Xtick',1:11,'XTickLabel',{'5','','9','','13','','17','','21','','25'});
 xlabel('Band-limit, L');
 ylabel('E_{max} or E_{mean}');
 legend('E_{max}','E_{mean}','Location','northwest');

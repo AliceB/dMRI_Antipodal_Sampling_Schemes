@@ -3,7 +3,7 @@
  *
  * Code generation for function 'nsht_legmat_emxutil'
  *
- * C source code generated on: Wed Aug 27 10:26:35 2014
+ * C source code generated on: Fri Sep 05 12:50:43 2014
  *
  */
 
