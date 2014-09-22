@@ -24,10 +24,10 @@ for L = 1:2:25
         %% inverse transform
         ft  = nsht_inverse(flmt,L);
 
-
         %% forward transform
+        tStartfwd = tic;
         flmr = nsht_forward(ft,L);
-
+        toc(tStartfwd);
         
         %% Absolute error
         Error_max = max(abs(flmt-flmr));

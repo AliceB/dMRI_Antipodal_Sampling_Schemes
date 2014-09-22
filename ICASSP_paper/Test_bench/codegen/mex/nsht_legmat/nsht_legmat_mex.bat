@@ -1,7 +1,7 @@
 @echo off
-set MATLAB=C:\PROGRA~1\matlab\r2013b
+set MATLAB=C:\PROGRA~1\MATLAB\r2013b
 set MATLAB_ARCH=win64
-set MATLAB_BIN="C:\Program Files\matlab\r2013b\bin"
+set MATLAB_BIN="C:\Program Files\MATLAB\r2013b\bin"
 set ENTRYPOINT=mexFunction
 set OUTDIR=.\
 set LIB_NAME=nsht_legmat_mex
@@ -23,4 +23,4 @@ echo OMPFLAGS= >> nsht_legmat_mex.mki
 echo OMPLINKFLAGS= >> nsht_legmat_mex.mki
 echo EMC_COMPILER=msvcsdk>> nsht_legmat_mex.mki
 echo EMC_CONFIG=optim>> nsht_legmat_mex.mki
-"C:\Program Files\matlab\r2013b\bin\win64\gmake" -B -f nsht_legmat_mex.mk
+"C:\Program Files\MATLAB\r2013b\bin\win64\gmake" -B -f nsht_legmat_mex.mk
