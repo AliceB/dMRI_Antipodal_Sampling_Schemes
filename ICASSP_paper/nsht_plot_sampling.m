@@ -34,8 +34,20 @@ axis off;
 axis equal;
 
 
-[THETA, FI] = nsht_sampling_points(L);
-
+[THETA, FI_theta_A] = nsht_sampling_points(L);
+FI = zeros (1,2*length(FI_theta_A)-1);
+start = 0;
+for m=0:L-1
+    if mod(m,2)==0
+        FI(start + 1: (start + 2*m + 1)) = FI_theta_A(0.5*m^2-0.5*m+1:0.5*m^2+1.5*m+1);   
+        start = start + 2*m+1;
+    else
+        n = m+1;
+        FI(start + 1: (start + 2*n + 1))  = mod( FI_theta_A(0.5*n^2-0.5*n+1:0.5*n^2+1.5*n+1) + pi, 2*pi);
+        start = start + 2*n+1;
+    end
+     
+end
 
 X_vec = zeros(size(FI));
 Y_vec = zeros(size(FI));
@@ -70,48 +82,33 @@ end
 
 %%
 
-
+start = 0;
 temp=1;
-%L even
-if mod(L,2) == 0
-    
-    for i=0:1:length(THETA)-1
-        for j=i^2+1:1:(i+1)^2
-            Xm = 1*sin(THETA(i+1)).*cos(FI(j));
-            Ym = 1*sin(THETA(i+1)).*sin(FI(j));
-            Zm = 1*cos(THETA(i+1));
-            X_vec(temp) = Xm;
-            Y_vec(temp) = Ym;
-            Z_vec(temp) = Zm;
-            temp=temp+1;
-            if mod(i,2) == 0
-                disp('got in here');
-                plot3(Xm,Ym,Zm, '.', 'markersize', 25,  'color',colourMap(40,:));
-            else
-                plot3(Xm,Ym,Zm, '.', 'markersize', 25,  'color','k');
-            end
+for i=0:1:length(THETA)-1
+    if mod(i,2) == 0
+       index =  start + 1: start + 2*i + 1;
+       start = start + 2*i+1;
+    else
+        n = i+1;
+       index  =  start + 1: start + 2*n + 1;
+       start = start + 2*n+1;
+    end 
+    for j=index
+        Xm = 1*sin(THETA(i+1)).*cos(FI(j));
+        Ym = 1*sin(THETA(i+1)).*sin(FI(j));
+        Zm = 1*cos(THETA(i+1));
+        X_vec(temp) = Xm;
+        Y_vec(temp) = Ym;
+        Z_vec(temp) = Zm;
+        temp = temp+1;
+
+        if mod(i,2) == 0
+            plot3(Xm,Ym,Zm, '.', 'markersize', 25,  'color','k');
+        else
+            plot3(Xm,Ym,Zm, '.', 'markersize', 25,  'color',colourMap(40,:));
         end
+
     end
-else %L odd
-    for i=0:1:length(THETA)-1
-        for j=i^2+1:1:(i+1)^2
-            Xm = 1*sin(THETA(i+1)).*cos(FI(j));
-            Ym = 1*sin(THETA(i+1)).*sin(FI(j));
-            Zm = 1*cos(THETA(i+1));
-            X_vec(temp) = Xm;
-            Y_vec(temp) = Ym;
-            Z_vec(temp) = Zm;
-            temp=temp+1;
-            
-            if mod(i,2) == 0
-                plot3(Xm,Ym,Zm, '.', 'markersize', 25,  'color','k');
-            else
-                plot3(Xm,Ym,Zm, '.', 'markersize', 25,  'color',colourMap(40,:));
-            end
-            
-        end
-    end
-    
 end
 
 

@@ -20,14 +20,14 @@ for L = 1:2:25
         for l = 1:2:L
              flmt(l^2-2*l+2:l^2) =  rand(1,(2*l-1)) + 1i*rand(1,(2*l-1));
         end
-
+%          load('rand_L5_flm.mat')
         %% inverse transform
         ft  = nsht_inverse(flmt,L);
-
+        
         %% forward transform
-        tStartfwd = tic;
+   %     tStartfwd = tic;
         flmr = nsht_forward(ft,L);
-        toc(tStartfwd);
+  %      toc(tStartfwd);
         
         %% Absolute error
         Error_max = max(abs(flmt-flmr));
@@ -53,7 +53,7 @@ semilogy(MAX_Errors,'.-','MarkerSize',14,'Color','k','linewidth',2);
 hold on;
 grid on;
 box on; 
-axis([1 13 10^-17 10^-14]); 
+axis([1 13 10^-17 10^-13]); 
 semilogy(MEAN_Errors,'-x','MarkerSize',10,'Color','k','linewidth',2);
 
 set(gca,'FontSize',12) 

@@ -3,7 +3,7 @@
  *
  * Code generation for function 'nsht_legmat'
  *
- * C source code generated on: Tue Sep 16 17:00:35 2014
+ * C source code generated on: Thu Sep 25 09:14:01 2014
  *
  */
 
@@ -35,26 +35,26 @@ static emlrtRSInfo e_emlrtRSI = { 82, "nsht_legmat",
 };
 
 static emlrtRSInfo f_emlrtRSI = { 16, "error",
-  "C:/Program Files/MATLAB/r2013b/toolbox/eml/lib/matlab/lang/error.m" };
+  "C:/Program Files/matlab/r2013b/toolbox/eml/lib/matlab/lang/error.m" };
 
 static emlrtRSInfo g_emlrtRSI = { 117, "nsht_legmat",
   "C:/Users/u5472257/Documents/GitHub/dMRI_Sampling_Schemes/ICASSP_paper/nsht_legmat.m"
 };
 
 static emlrtRSInfo h_emlrtRSI = { 14, "sqrt",
-  "C:/Program Files/MATLAB/r2013b/toolbox/eml/lib/matlab/elfun/sqrt.m" };
+  "C:/Program Files/matlab/r2013b/toolbox/eml/lib/matlab/elfun/sqrt.m" };
 
 static emlrtRSInfo i_emlrtRSI = { 20, "eml_error",
-  "C:/Program Files/MATLAB/r2013b/toolbox/eml/lib/matlab/eml/eml_error.m" };
+  "C:/Program Files/matlab/r2013b/toolbox/eml/lib/matlab/eml/eml_error.m" };
 
 static emlrtRSInfo j_emlrtRSI = { 37, "mpower",
-  "C:/Program Files/MATLAB/r2013b/toolbox/eml/lib/matlab/ops/mpower.m" };
+  "C:/Program Files/matlab/r2013b/toolbox/eml/lib/matlab/ops/mpower.m" };
 
 static emlrtRSInfo k_emlrtRSI = { 42, "power",
-  "C:/Program Files/MATLAB/r2013b/toolbox/eml/lib/matlab/ops/power.m" };
+  "C:/Program Files/matlab/r2013b/toolbox/eml/lib/matlab/ops/power.m" };
 
 static emlrtRSInfo l_emlrtRSI = { 56, "power",
-  "C:/Program Files/MATLAB/r2013b/toolbox/eml/lib/matlab/ops/power.m" };
+  "C:/Program Files/matlab/r2013b/toolbox/eml/lib/matlab/ops/power.m" };
 
 static emlrtRSInfo m_emlrtRSI = { 100, "nsht_legmat",
   "C:/Users/u5472257/Documents/GitHub/dMRI_Sampling_Schemes/ICASSP_paper/nsht_legmat.m"
@@ -65,7 +65,7 @@ static emlrtRSInfo n_emlrtRSI = { 102, "nsht_legmat",
 };
 
 static emlrtMCInfo emlrtMCI = { 16, 1, "error",
-  "C:/Program Files/MATLAB/r2013b/toolbox/eml/lib/matlab/lang/error.m" };
+  "C:/Program Files/matlab/r2013b/toolbox/eml/lib/matlab/lang/error.m" };
 
 static emlrtRTEInfo emlrtRTEI = { 1, 19, "nsht_legmat",
   "C:/Users/u5472257/Documents/GitHub/dMRI_Sampling_Schemes/ICASSP_paper/nsht_legmat.m"
@@ -120,7 +120,7 @@ static emlrtBCInfo e_emlrtBCI = { -1, -1, 79, 20, "Sc", "nsht_legmat",
   0 };
 
 static emlrtRTEInfo f_emlrtRTEI = { 20, 5, "eml_error",
-  "C:/Program Files/MATLAB/r2013b/toolbox/eml/lib/matlab/eml/eml_error.m" };
+  "C:/Program Files/matlab/r2013b/toolbox/eml/lib/matlab/eml/eml_error.m" };
 
 /* Function Declarations */
 static void b_eml_error(void);

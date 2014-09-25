@@ -40,7 +40,6 @@ end
 [THETA, FI] = nsht_sampling_points(L);
 % initialize
 f = zeros(size(FI));
-
 % iteratvely compute the contribution for different orders m and -m
 for m=0:1:L-1    
     [P Sc] = nsht_legmat_mex(THETA, L, m);
@@ -60,9 +59,9 @@ for m=0:1:L-1
     f_temp=zeros(size(FI));
     f_temp_neg=zeros(size(FI));
     
-    for ii=0:length(THETA)-1
-       f_temp(ii^2+1:(ii+1)^2) = gm(ii+1); 
-       f_temp_neg(ii^2+1:(ii+1)^2) = gm_neg(ii+1); 
+    for ii=0:2:length(THETA)-1
+       f_temp(0.5*ii^2-0.5*ii+1:0.5*ii^2+1.5*ii+1) = gm(ii+1); 
+       f_temp_neg(0.5*ii^2-0.5*ii+1:0.5*ii^2+1.5*ii+1) = gm_neg(ii+1); 
     end
         
     
@@ -73,6 +72,8 @@ for m=0:1:L-1
     end
 
 end
+
+%take only the antipodal samples
         
 end
 

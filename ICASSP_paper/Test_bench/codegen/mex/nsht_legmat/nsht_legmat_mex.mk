@@ -1,6 +1,6 @@
 START_DIR = C:\Users\u5472257\DOCUME~1\GitHub\DMRI_S~1\ICASSP~1\TEST_B~1
 
-MATLAB_ROOT = C:\PROGRA~1\MATLAB\r2013b
+MATLAB_ROOT = C:\PROGRA~1\matlab\r2013b
 MAKEFILE = nsht_legmat_mex.mk
 
 include nsht_legmat_mex.mki
